@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- google fonts  start-->
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap" rel="stylesheet">
+
+    <!-- google fonts  end-->
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/canecode_switch.css">
+    <link rel="stylesheet" href="css/tab-style.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/media.css">
+<!--    <link rel="stylesheet" href="css/style.css">-->
+    <title>Nova Lens</title>
+</head>
+
+<body>
+<section class="nova">
+    <div class="container">
+        <div class="row">
+          <div class=" col-xl-12 col-md-12 col-sm-12 col-12">
+            <div class="r-btn">
+              <input id="example" type="checkbox" name="switch" class="toggle-btn">
+            </div>
+            <!-- toggle img change start -->
+            <div class="toggle-img">
+              <div class="this_shows_when_switch_is_off">
+               <img src="images/03 With Drive.jpg" alt="" class="img-fluid">
+             </div>
+             <div class="this_shows_when_switch_is_on">
+               <img src="images/03 Without Drive.jpg" alt="" class="img-fluid">
+             </div>
+           </div>
+           <!-- toggle img change end -->
+
+         </div>
+        </div>
+    </div>
+</section>
+    
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <script src="js/canecode_switch.js"></script>
+    <script>
+        $(document).ready(function() {
+            $('.tabs').tabslet();
+        });
+        
+        $(function(){
+  canecode_switch("#example",".this_shows_when_switch_is_off", ".this_shows_when_switch_is_on");
+});
+    </script>
+
+</body>
+
+</html>

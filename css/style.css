@@ -1,0 +1,21 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.nova{
+    font-family: 'Roboto', sans-serif;
+    padding: 100px 0 0 0;
+    background-color: #111;
+}
+
+/* toggle button */
+.canecode_select{
+    position: absolute;
+    border: 2px solid #b5191f;
+    margin-top: -4rem;
+    margin-left: 30rem;
+}
+.canecode_select.is_on{
+    background: #22e0dd;
+}
+/* toggle button */
